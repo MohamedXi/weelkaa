@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+    db:
+        image: mariadb
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        expose:
+            - 3306
+        volumes:
+            - "./mysql:/var/lib/mysql"
+
+    adminer:
+        build: ./adminer
+        restart: always
+        ports:
+            - 9001:8080
+        links:
+            - db
+
+    php:
+        build:
+            context: ./docker/php-fpm
+            args:
+                TIMEZONE: ${TIMEZONE}
+        restart: always
+        volumes:
+            - ./app:/var/www/symfony:cached
+        links:
+            - db
+
+    nginx:
+        build:
+            context: ./docker/nginx
+            args:
+                MAX_EXECUTION_TIME: ${MAX_EXECUTION_TIME}
+                SERVER_NAME: ${SERVER_NAME}
+        ports:
+            - 9000:80
+        restart: always
+        volumes:
+            - ./logs/nginx/:/var/log/nginx:cached
+            - ./app/public:/var/www/symfony/public:cached
+        depends_on:
+            - php
