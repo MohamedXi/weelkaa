@@ -12,7 +12,10 @@
 ###> symfony/phpunit-bridge ###
 /app/.phpunit
 /app/.phpunit.result.cache
-/app//phpunit.xml
+/app/phpunit.xml
+/app/.idea/php.xml
+/app/.idea/weelkaa.iml
+/app/.idea/workspace.xml
 ###< symfony/phpunit-bridge ###
 
 /mysql
