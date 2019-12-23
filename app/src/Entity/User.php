@@ -6,11 +6,20 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  * @ApiResource()
+ * @UniqueEntity(
+ *     fields={
+            "emailAddress"
+ *     },
+ *     message="The email address already exists"
+ * )
  */
 class User implements UserInterface
 {
@@ -18,37 +27,49 @@ class User implements UserInterface
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"users_read", "customers_read", "invoices_read", "invoices_subresource"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Groups({"users_read"})
+     * @Assert\NotBlank(message="The email address can't be blank")
+     * @Assert\Email(message="You must entry a valid email address")
      */
     private $emailAddress;
 
     /**
      * @ORM\Column(type="json")
+     * @Groups({"users_read"})
      */
     private $roles = [];
 
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
+     * @Groups({"users_read"})
+     * @Assert\NotBlank(message="The password can't be blank")
      */
     private $password;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"users_read", "customers_read", "invoices_read", "invoices_subresource"})
+     * @Assert\NotBlank(message="The first name can't be blank")
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"users_read", "customers_read", "invoices_read", "invoices_subresource"})
+     * @Assert\NotBlank(message="The last name can't be blank")
      */
     private $lastName;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Customer", mappedBy="user")
+     * @Groups({"users_read"})
      */
     private $customers;
 
