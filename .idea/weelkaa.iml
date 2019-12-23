@@ -29,7 +29,10 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/fig/link-util" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/lexik/jwt-authentication-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/namshi/jose" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/nelmio/cors-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/ocramius/package-versions" />

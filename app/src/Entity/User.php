@@ -13,7 +13,11 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
- * @ApiResource()
+ * @ApiResource(
+ *     normalizationContext={
+            "groups"={"users_read"}
+ *     }
+ * )
  * @UniqueEntity(
  *     fields={
             "emailAddress"
@@ -48,7 +52,6 @@ class User implements UserInterface
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
-     * @Groups({"users_read"})
      * @Assert\NotBlank(message="The password can't be blank")
      */
     private $password;
