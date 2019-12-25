@@ -54,7 +54,7 @@ class Invoice
      * @ORM\Column(type="datetime")
      * @Groups({"invoices_read", "customers_read", "invoices_subresource"})
      * @Assert\NotBlank(message="You must insert a valid date")
-     * @Assert\DateTime(message="The date must be YYYY-MM-DD format")
+     * @Assert\Type(type="dateTime", message="The date must be YYYY-MM-DD format")
      */
     private $sentAt;
 
