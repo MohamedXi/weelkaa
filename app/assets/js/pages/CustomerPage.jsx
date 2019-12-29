@@ -14,7 +14,7 @@ const CustomersPage = (props) => {
             const data = await CustomerAPI.findAll();
             setCustomers(data);
         } catch (e) {
-            console.log(error.response)
+            console.log(e.response)
         }
     };
 

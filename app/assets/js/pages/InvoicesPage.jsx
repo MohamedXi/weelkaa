@@ -30,7 +30,7 @@ const InvoicesPage = props => {
             const data = await InvoicesAPI.findAll();
             setInvoices(data);
         } catch (e) {
-            console.log(error.response)
+            console.log(e.response)
         }
     };
 

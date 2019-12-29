@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be7da00-ca91-4144-8c26-5a47b7602c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/components/Navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/components/Pagination.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/CustomerPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/CustomerPageWithPagination.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/HomePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/InvoicesPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/js/services/invoicesAPI.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/weelkaa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weelkaa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/components/PrivateRoute.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/contexts/AuthenticationContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/LoginPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/services/authorizationAPI.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/js/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/js/pages/CustomerPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/pages/CustomerPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/js/pages/InvoicesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/pages/InvoicesPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +208,8 @@
       <workItem from="1577276133228" duration="16146000" />
       <workItem from="1577385490677" duration="3337000" />
       <workItem from="1577535823652" duration="7650000" />
-      <workItem from="1577558821549" duration="5216000" />
+      <workItem from="1577558821549" duration="5787000" />
+      <workItem from="1577606421841" duration="17489000" />
     </task>
     <servers />
   </component>
