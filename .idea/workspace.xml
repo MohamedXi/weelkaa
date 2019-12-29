@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6be7da00-ca91-4144-8c26-5a47b7602c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Doctrine/CurrentUserExtension.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/EventListener/JWTCreatedListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/EventsSubscriber/CustomerUserSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/EventsSubscriber/InvoiceChronoSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/EventsSubscriber/PasswordEncoderSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/components/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/components/Pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/CustomerPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/CustomerPageWithPagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/HomePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/pages/InvoicesPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/js/services/invoicesAPI.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/weelkaa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weelkaa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Repository/InvoiceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/InvoiceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +161,7 @@
       <path value="$PROJECT_DIR$/app/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/app/vendor/lexik/jwt-authentication-bundle" />
       <path value="$PROJECT_DIR$/app/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VFaoD52DDZXMD4md8wkXCZEdm7" />
@@ -155,7 +169,8 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/js/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,11 +180,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/js/pages" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/EventListener" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -196,7 +212,13 @@
       <updated>1576851469486</updated>
       <workItem from="1576851470602" duration="16499000" />
       <workItem from="1576951338178" duration="2389000" />
-      <workItem from="1576996722520" duration="24414000" />
+      <workItem from="1576996722520" duration="31561000" />
+      <workItem from="1577272654427" duration="85000" />
+      <workItem from="1577272755449" duration="1541000" />
+      <workItem from="1577276133228" duration="16146000" />
+      <workItem from="1577385490677" duration="3337000" />
+      <workItem from="1577535823652" duration="7650000" />
+      <workItem from="1577558821549" duration="5216000" />
     </task>
     <servers />
   </component>

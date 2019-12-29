@@ -24,11 +24,10 @@ class AppFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-
         $faker = Factory::create('fr_FR'); // Define faker variable
 
         // Create user data
-        for ($u = 0; $u < 10; $u++) {
+        for ($u = 0; $u < 10; ++$u) {
             $user = new User();
 
             $chrono = 1;
@@ -38,31 +37,34 @@ class AppFixtures extends Fixture
             $user->setFirstName($faker->firstName())
                 ->setLastName($faker->lastName)
                 ->setEmailAddress($faker->email)
-                ->setPassword($hash);
+                ->setPassword($hash)
+            ;
 
             $manager->persist($user);
 
             // Create data customers
-            for ($c = 0; $c < mt_rand(5, 30); $c++) {
+            for ($c = 0; $c < mt_rand(5, 30); ++$c) {
                 $customer = new Customer();
                 $customer->setFirstName($faker->firstName())
                     ->setLastName($faker->lastName)
                     ->setEmailAddress($faker->email)
                     ->setCompany($faker->company)
-                    ->setUser($user);
+                    ->setUser($user)
+                ;
 
                 $manager->persist($customer);
 
                 // Create invoice data for customers
-                for ($i = 0; $i < mt_rand(3, 10); $i++) {
+                for ($i = 0; $i < mt_rand(3, 10); ++$i) {
                     $invoice = new Invoice();
                     $invoice->setAmount($faker->randomFloat(2, 350, 12000))
                         ->setSentAt($faker->dateTimeBetween('-6 month'))
-                        ->setSatus($faker->randomElement(['SENT', 'PAID', 'CANCELLED']))
+                        ->setStatus($faker->randomElement(['SENT', 'PAID', 'CANCELLED']))
                         ->setCustomers($customer)
-                        ->setChrono($chrono);
+                        ->setChrono($chrono)
+                    ;
 
-                    $chrono++;
+                    ++$chrono;
 
                     $manager->persist($invoice);
                 }

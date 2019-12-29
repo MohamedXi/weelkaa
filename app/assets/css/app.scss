@@ -1,0 +1,16 @@
+// Customize all fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif !important;
+  background: #f4f4f4 !important;
+}
+
+table {
+  background: #ffffff;
+}
+// customize some Bootstrap variables
+//$primary: darken(#428bca, 20%);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";

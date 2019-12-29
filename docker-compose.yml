@@ -18,7 +18,7 @@ services:
         build: ./adminer
         restart: always
         ports:
-            - 9001:8080
+            - "9001:8080"
         links:
             - db
 
@@ -40,7 +40,7 @@ services:
                 MAX_EXECUTION_TIME: ${MAX_EXECUTION_TIME}
                 SERVER_NAME: ${SERVER_NAME}
         ports:
-            - 9000:80
+            - "9000:80"
         restart: always
         volumes:
             - ./logs/nginx/:/var/log/nginx:cached
